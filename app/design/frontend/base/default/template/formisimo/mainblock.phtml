@@ -1,1 +1,24 @@
 <script type="text/javascript" src="//cdn-static.formisimo.com/tracking/js/tracking.js"></script>
+
+<script type="text/javascript">
+
+    // Define the conversion code URL
+    var c = "//cdn-static.formisimo.com/tracking/js/conversion.js";
+
+    function conversion(t) {
+        // Takes the target element as an input argument to insert the conversion code into as "t"
+
+        var s = document.createElement("script");   // Create a HTML <script> element
+        s.type = "text/javascript";                 // Set the type attribute on the <script> element
+        s.src = c;                                  // Set the src attribute on the <script> element
+        $j(t).append(s);                            // Append the new <script> element to the target element
+    }
+
+    // On click() of the button at end of each stage of checkout, fire the conversion event
+    $j("li#opc-login button").click(function() { conversion("li#opc-login"); });                        // Guest checkout / Register
+    $j("li#opc-billing button").click(function() { conversion("li#opc-billing"); });                    // Billing Information
+    $j("li#opc-shipping button").click(function() { conversion("li#opc-shipping"); });                  // Shipping Information
+    $j("li#opc-shipping_method button").click(function() { conversion("li#opc-shipping_method"); });    // Shipping Method
+    $j("li#opc-payment button").click(function() { conversion("li#opc-payment"); });                    // Payment Information
+
+</script>
