@@ -1,6 +1,9 @@
+<!-- Formisimo form analytics extension v2.2.1 -->
 <script type="text/javascript" src="//cdn-static.formisimo.com/tracking/js/tracking.js"></script>
-
 <script type="text/javascript">
+
+    // Return control of $ back to other JS libraries allowing us to use jQuery using $j
+    var $j = jQuery.noConflict();
 
     // Define the conversion code URL
     var c = "//cdn-static.formisimo.com/tracking/js/conversion.js";
@@ -22,3 +25,4 @@
     $j("li#opc-payment button").click(function() { conversion("li#opc-payment"); });                    // Payment Information
 
 </script>
+<!-- Formisimo extension end>
