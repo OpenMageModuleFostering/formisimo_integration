@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Formisimo_Integration>
+			<version>2.0.0</version>
+		</Formisimo_Integration>
+	</modules>
+	<global>
+		<blocks>
+			<integration>
+				<class>Formisimo_Integration_Block</class>
+			</integration>
+		</blocks>
+		<helpers>
+			<integration>
+				<class>Formisimo_Integration_Helper</class>
+			</integration>
+		</helpers>
+	</global>
+<frontend>
+         <routers>
+            <integration>
+                  <use>standard</use>
+                  <args>
+                     <module>Formisimo_Integration</module>
+                     <frontName>formisimo</frontName>
+                  </args>
+            </integration>
+         </routers>
+         <layout>
+            <updates>
+                <integration>
+                    <file>formisimo.xml</file>
+                </integration>
+            </updates>
+        </layout>
+</frontend>
+</config>

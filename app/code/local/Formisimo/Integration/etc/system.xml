@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<config>
+  <sections>
+    <formisimo_options translate="label">
+      <label>Formisimo</label>
+      <tab>general</tab>
+      <frontend_type>text</frontend_type>
+      <sort_order>1000000</sort_order>
+      <show_in_default>1</show_in_default>
+      <show_in_website>1</show_in_website>
+      <show_in_store>1</show_in_store>
+      <groups>
+        <formisimo_configuration translate="label">
+          <label>Formisimo configuration</label>
+          <frontend_type>text</frontend_type>
+          <sort_order>100</sort_order>
+          <show_in_default>1</show_in_default>
+          <show_in_website>1</show_in_website>
+          <show_in_store>1</show_in_store>
+          <comment>
+            <![CDATA[
+              <p><a href="http://www.formisimo.com/?utm_source=magento_admin&utm_medium=link&utm_campaign=link1" target=_blank><img src="http://www.formisimo.com/images/formisimo-logo.png"></a></p>
+
+              <p><a href="http://www.formisimo.com/?utm_source=magento_admin&utm_medium=link&utm_campaign=link1" target=_blank style="color:#555">Formisimo</a> is an advanced Form Analytics solution that can measure how users engage with your checkout process and enquiry form.</p><p>Integrating with Magento using this extension will automatically put the Formisimo tracking code and conversion code in the right place in your form.</p>
+
+              <h2>Congratulations!</h2>
+
+              <p>The Formisimo plugin for Magento has successfully been installed on your site. Formisimo will start tracking visitors to your checkout process and there's nothing more you need to do - we'll handle the rest!</p>
+
+              <p>You can <a href="https://app.formisimo.com" target=_blank style="color:#555">login to your Formisimo account</a> to see all the data.</p>
+            ]]>
+          </comment>
+        </formisimo_configuration>
+      </groups>
+    </formisimo_options>
+  </sections>
+</config>
