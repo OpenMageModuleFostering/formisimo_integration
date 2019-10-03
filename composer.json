@@ -1,7 +1,7 @@
 {
-    "name": "OpenMageModuleFostering\/formisimo_integration",
+    "name": "openmage-module-fostering\/formisimo_integration",
     "type": "magento-module",
-    "license": "OSL",
+    "license": "OSL-3.0",
     "homepage": "",
     "description": "Formisimo is a Checkout and Form Analytics solution - this module installs the Formisimo code in to your Magento installation.",
     "authors": [
